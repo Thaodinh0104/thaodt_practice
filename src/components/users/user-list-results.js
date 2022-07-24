@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react';git
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import PropTypes from 'prop-types';
 import { format } from 'date-fns';
@@ -17,7 +17,7 @@ import {
 } from '@mui/material';
 import { getInitials } from '../../utils/get-initials';
 
-export const userListResults = ({ users, ...rest }) => {
+export const UserListResults = ({ users, ...rest }) => {
   const [selecteduserIds, setSelecteduserIds] = useState([]);
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(0);
@@ -163,7 +163,7 @@ export const userListResults = ({ users, ...rest }) => {
   );
 };
 
-userListResults.propTypes = {
+UserListResults.propTypes = {
   users: PropTypes.array.isRequired
 };
 
